@@ -1,0 +1,168 @@
+.page {
+  min-height: 100svh;
+  background: var(--color-bg-page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-7) var(--space-4);
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-7) var(--space-6);
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Tab switcher ── */
+.tabs {
+  display: flex;
+  background: var(--color-bg-page);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  margin-bottom: var(--space-5);
+}
+
+.tab {
+  flex: 1;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 150ms ease, box-shadow 150ms ease, color 150ms ease;
+}
+
+.tab.active {
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+/* ── Form ── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.input {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.input:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(47, 94, 168, 0.12);
+}
+
+/* ── LGPD checkbox row ── */
+.checkRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkLabel {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.checkLabel a {
+  color: var(--color-text-link);
+  text-decoration: underline;
+}
+
+/* ── CTA ── */
+.btnPrimary {
+  width: 100%;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin-top: var(--space-2);
+  transition: background 150ms ease;
+}
+
+.btnPrimary:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ── Footer link ── */
+.footer {
+  margin-top: var(--space-4);
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.footerLink {
+  color: var(--color-text-link);
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .page {
+    align-items: flex-start;
+    padding: var(--space-4);
+  }
+
+  .card {
+    border: none;
+    box-shadow: none;
+    padding: var(--space-5) 0;
+  }
+}

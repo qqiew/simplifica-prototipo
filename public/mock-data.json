@@ -1,0 +1,179 @@
+{
+  "operators": [
+    {
+      "id": "op1",
+      "name": "OdontoPrev",
+      "logoUrl": "/logos/odontoprev.png"
+    },
+    {
+      "id": "op2",
+      "name": "Amil Dental",
+      "logoUrl": "/logos/amil.png"
+    },
+    {
+      "id": "op3",
+      "name": "SulAmérica Odonto",
+      "logoUrl": "/logos/sulameria.png"
+    },
+    {
+      "id": "op4",
+      "name": "Porto Seguro Dental",
+      "logoUrl": "/logos/porto.png"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan1",
+      "operatorId": "op1",
+      "name": "OdontoPrev Essencial",
+      "category": "individual",
+      "monthlyPrice": 49.90,
+      "coparticipation": false,
+      "orthodontics": false,
+      "implants": false,
+      "urgencyEmergency": true,
+      "ansCode": "123456",
+      "accreditedNetworkCount": 1240,
+      "coverage": {
+        "prevention": true,
+        "basicRestoration": true,
+        "endodontics": false,
+        "periodontics": false,
+        "prosthetics": false,
+        "orthodontics": false,
+        "implants": false,
+        "urgencyEmergency": true
+      },
+      "highlights": ["Sem carência para urgências", "Rede ampla em SP"],
+      "accreditedProviders": [
+        { "id": "prov1", "name": "Clínica Sorriso", "type": "clinic", "address": "Rua das Flores, 100", "city": "Mogi das Cruzes", "state": "SP", "lat": -23.5229, "lng": -46.1876 },
+        { "id": "prov2", "name": "OdontoCenter", "type": "clinic", "address": "Av. Brasil, 500", "city": "Mogi das Cruzes", "state": "SP", "lat": -23.5190, "lng": -46.1920 }
+      ]
+    },
+    {
+      "id": "plan2",
+      "operatorId": "op1",
+      "name": "OdontoPrev Família",
+      "category": "family",
+      "monthlyPrice": 89.90,
+      "coparticipation": false,
+      "orthodontics": false,
+      "implants": false,
+      "urgencyEmergency": true,
+      "ansCode": "123457",
+      "accreditedNetworkCount": 1240,
+      "coverage": {
+        "prevention": true,
+        "basicRestoration": true,
+        "endodontics": true,
+        "periodontics": false,
+        "prosthetics": false,
+        "orthodontics": false,
+        "implants": false,
+        "urgencyEmergency": true
+      },
+      "highlights": ["Até 4 dependentes", "Endodontia incluída"],
+      "accreditedProviders": []
+    },
+    {
+      "id": "plan3",
+      "operatorId": "op2",
+      "name": "Amil Dental Top",
+      "category": "individual",
+      "monthlyPrice": 79.90,
+      "coparticipation": false,
+      "orthodontics": true,
+      "implants": false,
+      "urgencyEmergency": true,
+      "ansCode": "234561",
+      "accreditedNetworkCount": 2100,
+      "coverage": {
+        "prevention": true,
+        "basicRestoration": true,
+        "endodontics": true,
+        "periodontics": true,
+        "prosthetics": false,
+        "orthodontics": true,
+        "implants": false,
+        "urgencyEmergency": true
+      },
+      "highlights": ["Ortodontia coberta", "Maior rede credenciada"],
+      "accreditedProviders": []
+    },
+    {
+      "id": "plan4",
+      "operatorId": "op3",
+      "name": "SulAmérica Especial",
+      "category": "individual",
+      "monthlyPrice": 119.90,
+      "coparticipation": false,
+      "orthodontics": true,
+      "implants": true,
+      "urgencyEmergency": true,
+      "ansCode": "345678",
+      "accreditedNetworkCount": 1850,
+      "coverage": {
+        "prevention": true,
+        "basicRestoration": true,
+        "endodontics": true,
+        "periodontics": true,
+        "prosthetics": true,
+        "orthodontics": true,
+        "implants": true,
+        "urgencyEmergency": true
+      },
+      "highlights": ["Implante coberto", "Cobertura completa"],
+      "accreditedProviders": []
+    },
+    {
+      "id": "plan5",
+      "operatorId": "op4",
+      "name": "Porto Dental Basic",
+      "category": "individual",
+      "monthlyPrice": 39.90,
+      "coparticipation": true,
+      "orthodontics": false,
+      "implants": false,
+      "urgencyEmergency": false,
+      "ansCode": "456789",
+      "accreditedNetworkCount": 980,
+      "coverage": {
+        "prevention": true,
+        "basicRestoration": true,
+        "endodontics": false,
+        "periodontics": false,
+        "prosthetics": false,
+        "orthodontics": false,
+        "implants": false,
+        "urgencyEmergency": false
+      },
+      "highlights": ["Menor preço", "Ideal para prevenção"],
+      "accreditedProviders": []
+    },
+    {
+      "id": "plan6",
+      "operatorId": "op4",
+      "name": "Porto Dental Plus",
+      "category": "family",
+      "monthlyPrice": 159.90,
+      "coparticipation": false,
+      "orthodontics": true,
+      "implants": false,
+      "urgencyEmergency": true,
+      "ansCode": "456790",
+      "accreditedNetworkCount": 1600,
+      "coverage": {
+        "prevention": true,
+        "basicRestoration": true,
+        "endodontics": true,
+        "periodontics": true,
+        "prosthetics": true,
+        "orthodontics": true,
+        "implants": false,
+        "urgencyEmergency": true
+      },
+      "highlights": ["Família completa", "Ortodontia para todos"],
+      "accreditedProviders": []
+    }
+  ]
+}

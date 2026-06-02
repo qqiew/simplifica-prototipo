@@ -1,0 +1,247 @@
+.page {
+  min-height: 100svh;
+  background: var(--color-bg-page);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-7) var(--space-5);
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* ── Question card ── */
+.card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-7) var(--space-6);
+  box-shadow: var(--shadow-card);
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-5);
+}
+
+/* ── Option cards ── */
+.optionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.optionCard {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-bg-surface);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-align: center;
+  transition: border-color 150ms ease, background 150ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.optionCard:hover {
+  border-color: var(--color-primary);
+}
+
+.optionCard.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.optionEmoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* ── Stepper (Step 2 — dependents) ── */
+.stepperLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin: var(--space-4) 0 var(--space-3);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.stepperBtn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 150ms ease;
+}
+
+.stepperBtn:hover {
+  background: var(--color-bg-page);
+}
+
+.stepperBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.stepperCount {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* ── State select (Step 4) ── */
+.selectWrap {
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 36px 10px 14px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-primary);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.select:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(47, 94, 168, 0.12);
+}
+
+.selectArrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--color-text-secondary);
+}
+
+/* ── Multi-select chips (Step 5) ── */
+.chipGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 8px 20px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-surface);
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.chip:hover {
+  border-color: var(--color-primary);
+}
+
+.chip.chipSelected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ── Navigation row ── */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-6);
+}
+
+.navEnd {
+  justify-content: flex-end;
+}
+
+.btnGhost {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.btnGhost:hover {
+  background: var(--color-bg-page);
+}
+
+.btnPrimary {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.btnPrimary:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .page {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .card {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .optionGrid {
+    grid-template-columns: 1fr;
+  }
+}

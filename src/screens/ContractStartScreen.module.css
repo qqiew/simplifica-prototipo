@@ -1,0 +1,320 @@
+.page {
+  min-height: 100svh;
+  background: var(--color-bg-page);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Navbar ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 64px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-5);
+}
+
+.brandPill {
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+/* ── Container ── */
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5);
+  flex: 1;
+}
+
+/* ── Page title ── */
+.pageTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-4);
+}
+
+/* ── Summary card ── */
+.summaryCard {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-5);
+}
+
+.summaryHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.planLogo {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.planMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.planName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-1);
+  line-height: 1.3;
+}
+
+.planSub {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-2);
+}
+
+.planTagRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.badgeAmber {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-text);
+}
+
+.proposalCode {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.priceBlock {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.priceValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-price);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.priceUnit {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-4) 0;
+}
+
+.paymentRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.paymentIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.paymentText {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* ── Next steps section ── */
+.nextSection {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-5);
+}
+
+.nextTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-5);
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.stepRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  position: relative;
+}
+
+/* vertical connector between steps */
+.stepRow:not(:last-child) {
+  padding-bottom: var(--space-5);
+}
+
+.stepRow:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 13px; /* half of 28px circle */
+  top: 28px;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.stepCircle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.stepContent {
+  flex: 1;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.stepLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-1);
+}
+
+.stepDesc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Actions ── */
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: space-between;
+}
+
+.btnGhost {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.btnGhost:hover {
+  background: var(--color-bg-page);
+}
+
+.btnPrimary {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 10px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.btnPrimary:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ── Loading ── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: var(--space-8);
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .container {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .summaryHeader {
+    flex-wrap: wrap;
+  }
+
+  .priceBlock {
+    width: 100%;
+    text-align: left;
+  }
+
+  .actions {
+    flex-direction: column-reverse;
+  }
+
+  .btnGhost,
+  .btnPrimary {
+    width: 100%;
+    text-align: center;
+  }
+}

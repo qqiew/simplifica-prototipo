@@ -1,0 +1,181 @@
+.card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary-light);
+}
+
+/* ── Header row ── */
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.planName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.operatorCat {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-2);
+}
+
+/* badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badgeBlue   { background: var(--badge-blue-bg);  color: var(--badge-blue-text); }
+.badgeAmber  { background: var(--badge-amber-bg); color: var(--badge-amber-text); }
+.badgeGreen  { background: var(--badge-green-bg); color: var(--badge-green-text); }
+
+/* price */
+.priceBlock {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.priceValue {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-price);
+  line-height: 1.1;
+}
+
+.priceUnit {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* ── Highlights ── */
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.check {
+  color: var(--color-success);
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* ── Network badge ── */
+.network {
+  margin-bottom: var(--space-3);
+}
+
+.networkBadge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--badge-blue-bg);
+  color: var(--badge-blue-text);
+}
+
+/* ── Actions ── */
+.actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.btnDetail {
+  flex: 1;
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.btnDetail:hover {
+  background: var(--color-primary-light);
+}
+
+.btnCompare {
+  flex: 1;
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.btnCompare:hover {
+  background: var(--color-bg-page);
+}
+
+.btnCompareSelected {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  font-weight: 600;
+}

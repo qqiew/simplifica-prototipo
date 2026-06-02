@@ -1,0 +1,66 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  /* ── Brand ── */
+  --color-primary:        #2F5EA8;
+  --color-primary-dark:   #1E3F72;
+  --color-primary-light:  #EAF0FB;
+
+  /* ── Backgrounds ── */
+  --color-bg-page:        #F2F4F7;
+  --color-bg-surface:     #FFFFFF;
+  --color-bg-sidebar:     #F8F9FB;
+
+  /* ── Text ── */
+  --color-text-primary:   #1A1A2E;
+  --color-text-secondary: #5A6478;
+  --color-text-price:     #2F5EA8;
+  --color-text-link:      #2F5EA8;
+
+  /* ── Borders ── */
+  --color-border:         #E2E6EE;
+  --color-border-focus:   #2F5EA8;
+
+  /* ── Status badges ── */
+  --badge-green-bg:       #E8F5E9;
+  --badge-green-text:     #2E7D32;
+  --badge-amber-bg:       #FFF8E1;
+  --badge-amber-text:     #E65100;
+  --badge-blue-bg:        #EAF0FB;
+  --badge-blue-text:      #2F5EA8;
+  --badge-red-bg:         #FFEBEE;
+  --badge-red-text:       #C62828;
+
+  /* ── Feedback ── */
+  --color-success:        #2E7D32;
+  --color-error:          #C62828;
+
+  /* ── Spacing ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+
+  /* ── Radius ── */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-pill: 999px;
+
+  /* ── Shadows ── */
+  --shadow-card:       0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 4px 12px rgba(47,94,168,0.12);
+  --shadow-dropdown:   0 8px 24px rgba(0,0,0,0.12);
+}

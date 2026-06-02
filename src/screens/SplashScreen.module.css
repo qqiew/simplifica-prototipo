@@ -1,0 +1,87 @@
+.screen {
+  min-height: 100svh;
+  background: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-7) var(--space-5);
+}
+
+.logoIcon {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.wordmark {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.separator {
+  width: 120px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: var(--space-5) auto;
+}
+
+.tagline {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.btnPrimary {
+  background: #ffffff;
+  color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 14px 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.linkSecondary {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.linkSecondary:hover {
+  color: #ffffff;
+}
